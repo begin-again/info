@@ -1,0 +1,15 @@
+# Blogs
+
+- [CSS Tricks](https://css-tricks.com/newsletter/)
+- [CSS Weekly](https://css-weekly.com/archives/)
+- [DB Weekly](https://dbweekly.com/issues)
+- [Frontend Focus](https://frontendfoc.us/issues)
+- [Ishadeed](https://ishadeed.com/articles/)
+- [JavaScript Weekly](https://javascriptweekly.com/issues)
+- [Node Weekly](https://nodeweekly.com/issues)
+- [Pony Foo](https://ponyfoo.com/)
+- [Status Code](https://weekly.statuscode.com/issues)
+- [Tech Productivity](https://us20.campaign-archive.com/home/?u=88eb3ff0c5a479cf74013ef57&id=362b1686a3)
+- [Understanding Legacy Code](https://understandlegacycode.com/)
+- [Web Tools Weekly](https://us5.campaign-archive.com/home/?u=ea228d7061e8bbfa8639666ad&id=104d6bcc2d)
+- [ng](https://us7.campaign-archive.com/home/?u=e45fd510f70a16fd9f7797276&id=eb2e5da0a1)
