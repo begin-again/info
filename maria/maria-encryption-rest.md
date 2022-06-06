@@ -6,8 +6,7 @@
   - [impact encryption would have on a customer install](#impact-encryption-would-have-on-a-customer-install)
   - [impact encryption would have on a customer restore from backup](#impact-encryption-would-have-on-a-customer-restore-from-backup)
   - [encryption key management](#encryption-key-management)
-- [install](#install)
-  - [status](#status)
+- [status](#status)
 - [decrypt](#decrypt)
 - [backups](#backups)
   - [Restore](#restore)
@@ -20,7 +19,7 @@ Supports encryption via plugins. File key management [plugin](https://mariadb.co
 ```
 
 -  what is the impact on existing data?
-   -  no impact 
+   -  no impact
 -  see also [Enabling InnoDB Encryption](https://mariadb.com/kb/en/innodb-enabling-encryption/)
 
 To toggle encryption for testing times I used `SET GLOBAL innodb_encrypt_tables = OFF;`
@@ -69,19 +68,7 @@ Maria server would need to be shutdown as usual and the backup would need to be 
 while it is possible to encrypt a key, the best practice of storing the key on a usb/drive seems impractical for our customers. Instead we will utilize an un-encrypted key which should be created at installation or on first encryption. This key would of course be customer-specific and protected by the filesystem to be readable only by the mariadb-server process.
 
 
-## install
-
-
-INSTALLDIR: if empty is set to default
-DATADIR: if empty is set to default
-CLEANUPDATA: only used during uninstall, erases the datadir folder
-PASSWORD: root password
-
-```
-msiexec /u mariadb-10.4.24-winx64.msi INSTALLDIR=c:\MariaDB DATADIR=C:\db\data PASSWORD=mypass CLEANUPDATA=1 /l* c:\mdb.log /qb+
-```
-
-### status
+## status
 
 The encryption operation can be monitored from INFORMATION_SCHEMA.INNODB_TABLESPACES_ENCRYPTION table. In the following example, we query name of tablespace, current page under key rotation and maximum page in the tablespace for those tables that are not yet encrypted
 
@@ -172,5 +159,4 @@ innodb_tablespaces_encryption
 
 [client]
 port=3306
-
 ```
