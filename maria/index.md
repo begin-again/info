@@ -1,11 +1,20 @@
 # MariaDB Info
 
 
+- [Encryption at Rest](#encryption-at-rest)
 - [Api for downloads](#api-for-downloads)
 - [Installing from CLI](#installing-from-cli)
   - [properties](#properties)
   - [features](#features)
-- [resources](#resources)
+  - [logging](#logging)
+  - [examples](#examples)
+  - [resources](#resources)
+- [JSON](#json)
+
+
+## Encryption at Rest
+
+[Encryption at rest](./maria-encryption-rest.md)
 
 
 ## Api for downloads
@@ -61,6 +70,7 @@
 ```
 
 
+
 ## Installing from CLI
 
 
@@ -95,7 +105,7 @@
 | HeidiSQL        |          yes          | Installs HeidiSQL                               |
 
 
-## logging
+### logging
 
 `/l*v path-to-logfile.txt`
 
@@ -107,8 +117,15 @@ Install default features, database instance as service, non-default datadir and 
 To keep the data directory during an uninstall, you will need to pass an additional parameter <br>
 `msiexec /i path-to-package.msi SERVICENAME=MySQL ADDLOCAL=DEBUGSYMBOLS REMOVE=DEVEL /qn`
 
-## resources
+### resources
 
 - [option files](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/)
 - [cli installation](https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/#silent-installation)
 - [msiexec](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/msiexec)
+
+
+## JSON
+
+- [Quick start](https://mariadb.com/resources/blog/using-json-in-mariadb/)
+- [Sequelize JSON support](https://sequelize.org/docs/v6/other-topics/other-data-types/#json--sqlite--mysql--mariadb-and-postgresql-only-)
+- [Prisma JSON support](https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields)
