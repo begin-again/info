@@ -33,7 +33,7 @@ JOIN information_schema.INNODB_SYS_TABLES st
    ON te.SPACE = st.SPACE;
 ```
 
-te.ENCRYPTION_SCHEME = the key number, 0 would be non-encrypted
+ENCRYPTION_SCHEME = the key number, 0 would be non-encrypted
 
 ![image](https://user-images.githubusercontent.com/11179873/154510412-2f8a5585-2547-4232-92bf-31fdd0eabc78.png)
 
