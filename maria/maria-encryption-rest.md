@@ -20,7 +20,7 @@ Supports encryption via plugins. File key management [plugin](https://mariadb.co
 ```
 
 -  what is the impact on existing data?
-   -  no impact beyond re-creating and reloading the tables
+   -  no impact 
 -  see also [Enabling InnoDB Encryption](https://mariadb.com/kb/en/innodb-enabling-encryption/)
 
 To toggle encryption for testing times I used `SET GLOBAL innodb_encrypt_tables = OFF;`
@@ -56,7 +56,6 @@ the process takes X time dependent on the size fo the history table. This time s
 
 essentially no impact on customer install since the history table is empty. The server setup script would need to handle:
 - installing the encryption key
-- setting file permissions on the key file
 - configuring the ini file
 
 
