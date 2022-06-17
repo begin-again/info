@@ -12,6 +12,9 @@
 - [JSON](#json)
 
 
+
+Determine version: `SELECT @@version`
+
 ## Encryption at Rest
 
 [Encryption at rest](./maria-encryption-rest.md)
