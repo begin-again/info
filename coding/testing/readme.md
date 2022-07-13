@@ -1,4 +1,18 @@
-# Formalize Software Testing
+# Testing Info
+
+## Cucumber
+
+- [Intro to Cucumber](https://www.youtube.com/watch?v=lC0jzd8sGIA)
+- [Gherkin Best Practices](https://www.youtube.com/watch?v=nrggIRWK6qo)
+- [Gherkin for API Testing](https://www.youtube.com/watch?v=Ktrm2rmttm0)
+- [Browser functional testing](https://www.youtube.com/watch?v=SYxNQdUOVMw)
+- [SPA E2E with Cucumber and pupeteer](https://www.youtube.com/watch?v=Wapb_LIS45E)
+- [Headless Chrome & puppeteer](https://youtu.be/7-XnEMrQnn4?t=993)
+
+
+## Other
+
+
 
 ## Organizations
 
@@ -38,6 +52,8 @@ The purpose of the ISO/IEC/IEEE 29119 series of software testing standards is to
 
 *   [Software Testing for Beginners](https://www.youtube.com/watch?v=goaZTAzsLMk)
 *   [What a tester does](https://www.youtube.com/watch?v=Gdh1EvOkULA)
+*   [How to write untestable code](http://misko.hevery.com/2008/07/24/how-to-write-3v1l-untestable-code/)
+*   [Clean Code Talks - Unit Testing](https://www.youtube.com/watch?v=wEhu57pih5w)
 
 ## Books
 

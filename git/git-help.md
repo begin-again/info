@@ -334,6 +334,7 @@ One way to deal with these problems, is to create post-checkout hook for the git
 
 *   [Github On Demand](https://services.github.com/on-demand/)
 *   [Github For Developers](https://githubtraining.github.io/training-manual/fullcicdcircle/index)
+*   [Alternative to cherry-picking](https://stackoverflow.com/a/62402568/384724)
 *   Git Simulators
     *   [Visualize Git](http://git-school.github.io/visualizing-git/)
     *   [Git Branching](http://learngitbranching.js.org/)
