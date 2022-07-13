@@ -11,4 +11,4 @@ JS Language, NodeJS, and V8 JS Engine
 - [NodeJS Releases](https://github.com/begin-again/releases/blob/main/node/index.md)
 - [V8 Releases](https://github.com/begin-again/releases/blob/main/v8/releases.md)
 - [NPM notes](https://github.com/begin-again/releases/blob/main/npm-release.md)
--
+- [NodeJS REPL](./nodejs-repl.md)
