@@ -1,11 +1,5 @@
 # MariaDB Encryption at Rest
 
-- [Key Questions](#key-questions)
-  - [how long the process is to encrypt?](#how-long-the-process-is-to-encrypt)
-  - [how long the process is to decrypt?](#how-long-the-process-is-to-decrypt)
-  - [impact encryption would have on a customer install](#impact-encryption-would-have-on-a-customer-install)
-  - [impact encryption would have on a customer restore from backup](#impact-encryption-would-have-on-a-customer-restore-from-backup)
-  - [encryption key management](#encryption-key-management)
 - [status](#status)
 - [decrypt](#decrypt)
 - [backups](#backups)
@@ -35,37 +29,6 @@ JOIN information_schema.INNODB_SYS_TABLES st
 ENCRYPTION_SCHEME = the key number, 0 would be non-encrypted
 
 ![image](https://user-images.githubusercontent.com/11179873/154510412-2f8a5585-2547-4232-92bf-31fdd0eabc78.png)
-
-
-## Key Questions
-
-### how long the process is to encrypt?
-
-the process takes X time dependent on the size fo the history table. This time should not impact operations since it occurs while the server is still serving clients.
-
-14 million rows to approximately 10 minutes to fully encrypt
-
-
-### how long the process is to decrypt?
-
-14 million rows to approximately 10 minutes to fully decrypt
-
-
-### impact encryption would have on a customer install
-
-essentially no impact on customer install since the history table is empty. The server setup script would need to handle:
-- installing the encryption key
-- configuring the ini file
-
-
-### impact encryption would have on a customer restore from backup
-
-Maria server would need to be shutdown as usual and the backup would need to be encrypted if not already.
-
-
-### encryption key management
-
-while it is possible to encrypt a key, the best practice of storing the key on a usb/drive seems impractical for our customers. Instead we will utilize an un-encrypted key which should be created at installation or on first encryption. This key would of course be customer-specific and protected by the filesystem to be readable only by the mariadb-server process.
 
 
 ## status
